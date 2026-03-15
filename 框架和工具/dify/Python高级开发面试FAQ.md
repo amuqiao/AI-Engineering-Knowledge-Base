@@ -325,7 +325,7 @@ flowchart LR
     classDef noteStyle fill:#fff8e6,stroke:#ffb74d,stroke-width:1px
 
     subgraph creation["① 对象创建"]
-        C1[Python 代码<br/>a = [1, 2, 3]]:::createStyle
+        C1["Python 代码<br/>a = list(1,2,3)"]:::createStyle
         C2[PyObject 分配<br/>堆内存]:::heapStyle
         C3[引用计数 = 1<br/>ob_refcnt]:::refStyle
         C1 --> C2 --> C3
@@ -681,8 +681,6 @@ flowchart LR
 
     Note["GIL 释放时机：<br/>1. IO 操作（sleep/网络/磁盘）<br/>2. 每隔 sys.getswitchinterval() 秒（默认 5ms）<br/>3. 调用 C 扩展（numpy 内部释放）"]:::noteStyle
     Note -.-> GIL
-
-    linkStyle 0,1,2,3,4,5 stroke:#333,stroke-width:1.5px
 ```
 
 ```python
@@ -1038,8 +1036,6 @@ flowchart LR
         B3[命令模式<br/>Command]:::behavioralStyle
     end
     class behavioral subgraphStyle
-
-    linkStyle 0,1,2,3,4,5,6,7,8 stroke:#666,stroke-width:1px
 ```
 
 ```python
@@ -1331,7 +1327,7 @@ flowchart LR
     class classLayer subgraphStyle
 
     subgraph instanceLayer["实例层"]
-        I1[obj = MyClass()]:::instanceStyle
+        I1[obj = MyClass 实例化]:::instanceStyle
         I2[实例属性<br/>obj.__dict__]:::instanceStyle
     end
     class instanceLayer subgraphStyle
