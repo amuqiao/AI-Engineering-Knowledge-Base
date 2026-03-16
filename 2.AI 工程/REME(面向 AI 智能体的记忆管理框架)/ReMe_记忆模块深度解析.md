@@ -93,7 +93,7 @@ flowchart LR
 每条记忆以 `MemoryNode` 为核心数据模型，包含 13 个字段：
 
 ```mermaid
-flowchart TB
+flowchart LR
     classDef coreStyle fill:#4a90d9,stroke:#2c6fad,color:#fff
     classDef metaStyle fill:#7ed6a0,stroke:#4caf72
     classDef vectorStyle fill:#f4a0a0,stroke:#d9534f
