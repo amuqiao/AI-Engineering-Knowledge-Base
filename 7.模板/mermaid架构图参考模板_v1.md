@@ -1,3 +1,4 @@
+## 示例1
 ```mermaid
 flowchart LR
     %% 样式定义（沿用历史配色，保持视觉一致性）
@@ -69,4 +70,35 @@ flowchart LR
     Note[Kafka核心规则：<br/>1. 同一消费组：1分区→1消费者（无重复消费）<br/>2. 不同消费组：可同时订阅同一分区（独立消费）]:::ruleNoteStyle
     %% 注释关联
     Note -.-> kafkaCluster
+```
+## 示例2
+```mermaid
+flowchart LR
+    %% 样式定义
+    classDef coreStyle fill:#4299e1,stroke:#2b6cb0,stroke-width:2px,color:#fff
+    classDef supportStyle fill:#667eea,stroke:#434190,stroke-width:2px,color:#fff
+    classDef extStyle fill:#e2e8f0,stroke:#718096,stroke-width:2px,color:#2d3748
+    classDef subgraphStyle fill:#f7fafc,stroke:#cbd5e0,stroke-width:1.5px
+    classDef noteStyle fill:#fff8e6,stroke:#ffb74d,stroke-width:1px
+
+    subgraph moduleCore["模块核心组件"]
+        A[组件A<br/>核心职责]:::coreStyle
+        B[组件B<br/>核心职责]:::coreStyle
+    end
+    class moduleCore subgraphStyle
+
+    subgraph moduleSupport["支撑组件"]
+        C[组件C<br/>辅助职责]:::supportStyle
+    end
+    class moduleSupport subgraphStyle
+
+    A -->|调用方式| B
+    B -->|数据流| C
+
+    linkStyle 0 stroke:#2b6cb0,stroke-width:2px
+    linkStyle 1 stroke:#434190,stroke-width:1.5px
+
+    %% 辅助注释（解释模块核心设计要点）
+    Note[模块设计要点：<br/>1. 核心组件承载主业务逻辑<br/>2. 支撑组件提供通用能力复用<br/>3. 组件间通过接口解耦，可独立演进]:::noteStyle
+    Note -.-> moduleCore
 ```
