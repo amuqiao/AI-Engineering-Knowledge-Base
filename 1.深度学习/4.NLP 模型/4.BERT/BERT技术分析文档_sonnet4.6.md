@@ -4,6 +4,7 @@
 > **发表时间**：2018 年 10 月（arXiv）| **正式发表**：NAACL 2019
 > **作者**：Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
 > **机构**：Google AI Language
+> **论文链接**：[arXiv:1810.04805](https://arxiv.org/abs/1810.04805)
 
 ---
 
