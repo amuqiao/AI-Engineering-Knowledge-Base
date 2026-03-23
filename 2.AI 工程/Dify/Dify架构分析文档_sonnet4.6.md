@@ -96,7 +96,7 @@ flowchart LR
     classDef forbidStyle fill:#fee2e2,stroke:#dc2626,stroke-width:1.5px,color:#991b1b
 
     subgraph IFACE["① 接口层<br>controllers/"]
-        direction TB
+        direction LR
         C_CONSOLE["console/<br>管理后台 API"]:::ifaceStyle
         C_SVC["service_api/<br>生产推理 API"]:::ifaceStyle
         C_WEB["web/ mcp/<br>WebApp / MCP"]:::ifaceStyle
@@ -104,7 +104,7 @@ flowchart LR
     class IFACE layerStyle
 
     subgraph APP["② 应用层<br>services/ + tasks/"]
-        direction TB
+        direction LR    
         S_APP["AppGenerateService<br>推理用例协调"]:::appStyle
         S_WF["WorkflowService<br>工作流 CRUD"]:::appStyle
         S_DS["DatasetService<br>知识库用例"]:::appStyle
@@ -113,7 +113,7 @@ flowchart LR
     class APP layerStyle
 
     subgraph DOM["③ 领域层<br>core/"]
-        direction TB
+        direction LR
         subgraph DOM_APP["App 子域"]
             D_GEN["AppGenerator<br>推理领域服务"]:::domStyle
             D_RUN["AppRunner<br>执行领域服务"]:::domStyle
@@ -135,7 +135,7 @@ flowchart LR
     class DOM layerStyle
 
     subgraph INFRA["④ 基础设施层<br>models/ + extensions/ + repositories/"]
-        direction TB
+        direction LR
         I_PG["SQLAlchemy ORM<br>models/*.py"]:::infraStyle2
         I_REDIS["Redis Extension<br>缓存 / Pub-Sub"]:::infraStyle2
         I_VDB["VectorStore<br>抽象 + 多实现"]:::infraStyle2
