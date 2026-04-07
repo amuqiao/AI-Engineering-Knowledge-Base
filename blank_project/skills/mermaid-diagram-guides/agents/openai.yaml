@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mermaid Diagram Guides"
+  short_description: "Mermaid diagram guidance and style references"
+  default_prompt: "Use $mermaid-diagram-guides to choose the right Mermaid diagram type and produce a diagram that follows the bundled style rules."
