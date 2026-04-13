@@ -1,129 +1,164 @@
-# macOS-推荐应用
+# macOS 推荐应用
 
-## 1. 文档定位
+## 维护规则
 
-本文用于沉淀与 macOS 日常使用相关的应用推荐、软件获取原则和分类清单。  
-重点不是堆链接，而是说明“适合什么场景、为什么值得保留”。
+- 这份文档只记录自己长期会回看的应用与资源站。
+- 按场景分类；同一个应用只保留一条，避免重复。
+- 每个应用统一记录 8 个字段：软件名称、开源状态、说明、特点、适用场景、推荐优先级、评价、备注。
+- 8 个字段的职责固定如下：
+  - `软件名称`：使用 Markdown 链接，作为该应用的唯一入口。
+  - `开源状态`：只写授权与付费状态，不写功能描述。
+  - `说明`：只用一句话回答“这个软件是干什么的”。
+  - `特点`：只写它和同类相比最突出的差异点，尽量短。
+  - `适用场景`：只写“什么时候会用它”，不重复说明和特点。
+  - `推荐优先级`：只用于同功能内横向比较。
+  - `评价`：记录你自己的实际判断，可以留空，后续再补。
+  - `备注`：放快捷键、安装方式、权限要求、限制条件、个人判断等补充信息。
+- 同一功能的多个应用，尽量放在同一张表里，方便横向比较。
+- 不同功能不要强行合并；只有功能接近、确实需要比较时才放在同一个小节。
+- 如果某个功能当前只有 1 个应用，也可以单独保留，不必为了压缩结构硬塞到别的功能里。
+- 如果某个功能的候选逐渐变多，例如 OCR、记账、播放器这类，就从上级场景中拆成独立小节和独立表格。
+- 是否单独成表，优先看这个功能是否需要横向比较，而不是只看名字是否相近。
+- 一个经验规则：同功能达到 `3` 个及以上应用时，优先考虑单独成表；只有 `1-2` 个时，通常保留在当前场景下即可。
+- `说明` 控制在一句话内，避免写成教程或评测。
+- `特点` 尽量控制在 `2-6` 个字，强调差异点，不写完整介绍。
+- `评价` 默认留空；需要填写时，建议优先使用固定值：`在用` / `推荐` / `可替代` / `观察中` / `暂不推荐`。
+- `备注` 没有补充价值时可以留空，不强行填写。
+- 推荐优先级只在同一任务小节内横向比较。
+- 优先级含义：
+  - `🌟🌟🌟🌟🌟`：当前首选
+  - `🌟🌟🌟🌟`：强备选
+  - `🌟🌟🌟`：可用，按需安装
+  - `🌟🌟`：特定场景再考虑
+  - `🌟`：留档观察
+- `开源状态` 优先写 `开源` / `免费` / `付费` / `免费 / 内购` / `未核验`。
+- `备注` 用来放个人判断、快捷键、权限要求、原生替代方案等短信息。
 
-## 2. 软件获取原则
+## 资源站速查
 
-优先顺序建议如下：
+| 名称 | 链接 | 备注 |
+| --- | --- | --- |
+| MacWK | [macwk.cn](https://macwk.cn/) | 常看热门应用 |
+| MacBL | [macbl.com](https://www.macbl.com/) | 常看软件目录 |
+| Tickstep Links | [links.tickstep.com](https://links.tickstep.com/) | 资源导航 |
+| 玩儿法 | [waerfa.com](https://www.waerfa.com/) | 应用发现 |
+| xclient | [xclient.info](https://xclient.info/) | 软件索引 |
 
-1. 官方网站
-2. App Store
-3. GitHub 官方仓库
-4. 可信分发页或项目主页
+## 系统增强
 
-维护时建议：
+### LaunchPad 管理
 
-- 优先记录官方来源
-- 对来源不明、版本不清、合法性存疑的资源，不纳入正式推荐清单
-- 如果只是暂存资源线索，单独标注为“待核验”，不要直接当成稳定推荐
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [LaunchPadder](https://github.com/Molay/LaunchPadder/blob/main/README_zh-Hans.md) | 开源 | 用来整理和重排 LaunchPad 图标。 | LaunchPad 排序 | 整理启动台 | 🌟🌟🌟🌟 |  | 功能单一但够直接 |
 
-## 3. 应用资源线索（待核验）
+### 菜单栏管理
 
-下面这些链接更适合作为“资源线索”暂存，而不是直接视为正式推荐来源：
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Bartender](https://www.macwk.com/soft/bartender-4) | 付费 | 专门管理和折叠菜单栏图标。 | 菜单栏管理 | 图标太多时整理菜单栏 | 🌟🌟🌟🌟🌟 |  | 老牌方案 |
+| [Hidden Bar](https://apps.apple.com/es/app/hidden-bar/id1452453066) | 免费 | 轻量隐藏菜单栏图标的小工具。 | 轻量隐藏 | 只想隐藏少量图标 | 🌟🌟🌟🌟 |  | 适合轻需求 |
 
-- `https://macwk.cn/`
-- `https://www.macbl.com/`
-- `https://links.tickstep.com/`
-- `https://www.waerfa.com/`
-- `https://xclient.info/`
+### 窗口预览
 
-后续如果某个应用要进入正式推荐，优先补充其官方链接或更稳定来源。
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [DockDoor](https://dockdoor.net/) | 开源 | 用来给 Dock 增加实时窗口缩略图预览和切换能力。 | 实时预览 | 想获得接近 Windows 的 Dock 窗口预览体验 | 🌟🌟🌟🌟🌟 | 在用 | 官网与 GitHub 都可获取；通常需开启辅助功能和屏幕录制权限 |
+| [DockAltTab](https://github.com/iesad/DockAltTab) | 开源 | 用来做轻量级 Dock 窗口预览与切换。 | 轻量预览 | 追求极简功能，不需要额外特性 | 🌟🌟🌟🌟 |  | 适合只要预览和切换 |
+| [Mission Control Lite](https://github.com/LeeeSe/Mission-Control-Lite) | 开源 | 用来通过菜单栏快速预览和关闭窗口。 | 菜单栏预览 | 喜欢整洁界面，不想增加 Dock 图标 | 🌟🌟🌟 |  | 偏菜单栏路线 |
+| [iDock](https://apps.apple.com/us/app/idock/id1574555976) | 免费 | 用来提供简单直接的 Dock 窗口预览体验。 | App Store | 偏好通过 App Store 安装 | 🌟🌟🌟 |  | 适合普通用户 |
+| [HyperDock](https://doesitarm.com/app/hyperdock) | 付费 | 为 Dock 增加窗口预览和切换能力。 | 老牌方案 | 想补足 Dock 窗口预览体验 | 🌟🌟🌟🌟 |  | 老牌工具；也可先用系统自带 Mission Control |
+| [DockMate](https://www.macenhance.com/dockmate) | 付费 | 用来提供现代化的 Dock 窗口预览与操作。 | 现代界面 | 想要更现代的窗口预览体验 | 🌟🌟🌟🌟 |  | 付费替代方案 |
 
-## 4. 推荐应用清单
+原生替代：右键点击 Dock 图标可显示所有窗口；也可以用 `Mission Control` 查看当前桌面与窗口缩略图。
 
-### 4.1 系统与界面
+### 窗口布局
 
-- `LaunchPadder`
-  适合整理 Launchpad 图标顺序
-  参考链接：`https://github.com/Molay/LaunchPadder/blob/main/README_zh-Hans.md`
-- `Hidden Bar`
-  适合隐藏和收纳菜单栏图标
-- `HyperDock`
-  适合窗口预览和任务切换增强
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Pane](https://apps.apple.com/hk/app/pane-%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%88%86%E5%B1%8F%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F%E4%BD%8D%E7%BD%AE%E6%8E%A7%E5%88%B6%E8%BD%AF%E4%BB%B6/id6463054121) | 未核验 | 用来快速控制窗口大小和分屏布局。 | 分屏控制 | 调整窗口大小与布局 | 🌟🌟🌟🌟 |  | 偏窗口布局 |
 
-### 4.2 效率工具
+### 温度 / 风扇
 
-- `Bartender`
-  适合菜单栏管理
-  参考链接：`https://www.macwk.com/soft/bartender-4`
-- `Easydict`
-  适合划词翻译、截图翻译、OCR
-  参考链接：`https://macwk.cn/app/2007.html`
-- `FastZip`
-  适合压缩、解压缩场景
-  参考链接：`https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12`
-- `Pane`
-  适合窗口分屏和布局控制
-  参考链接：`https://apps.apple.com/hk/app/pane-%E8%B6%85%E5%A5%BD%E7%94%A8%E7%9A%84%E5%88%86%E5%B1%8F%E7%AA%97%E5%8F%A3%E5%A4%A7%E5%B0%8F%E4%BD%8D%E7%BD%AE%E6%8E%A7%E5%88%B6%E8%BD%AF%E4%BB%B6/id6463054121`
-- `Motrix`
-  适合下载管理
-  官方链接：`https://motrix.app/zh-CN/download`
-- `iText`
-  适合 OCR 图片文字识别与翻译
-  参考链接：`https://www.macwk.com/soft/itext`
-- `Macs Fan Control`
-  适合风扇转速调整和温度监控
-  参考链接：`https://www.macwk.com/soft/macs-fan-control`
-- `Movavi Video Converter`
-  适合视频格式转换和压缩
-  参考链接：`https://www.macwk.com/soft/movavi-video-converter-22`
-- `Cisdem PDFMaster`
-  适合 PDF 处理场景
-  参考链接：`https://macwk.cn/app/2266.html`
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Macs Fan Control Pro](https://www.macwk.com/soft/macs-fan-control) | 未核验 | 用来监控温度并查看风扇运行状态。 | 温度监控 | 观察温度与风扇状态 | 🌟🌟🌟 |  | 更偏排障与监控 |
 
-### 4.3 笔记与知识管理
+### 外观 / 光标
 
-- `MWeb`
-  适合 Markdown 写作和静态博客管理
-  参考链接：`https://www.macbl.com/app/utilities/mweb#history-versions`
-- `Logseq`
-  适合本地知识管理和双向链接笔记
-  官方链接：`https://github.com/logseq/logseq?tab=readme-ov-file`
-  参考阅读：
-  - `https://cloud.tencent.com/developer/article/2424574`
-  - `https://zhuanlan.zhihu.com/p/619887710`
-  - `https://www.notion.so/Logseq-Notion-Obsidian-2a4e37c651ab804180f8f95006b5dea4?pvs=21`
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Mousecape](https://github.com/alexzielenski/Mousecape) | 开源 | 用来管理和切换 macOS 光标主题。 | 光标主题 | 想自定义鼠标指针样式 | 🌟🌟 |  | 偏美化需求 |
 
-### 4.4 开发相关
+## 效率工具
 
-- `Tabby`
-  适合跨平台终端使用
-  官方链接：`https://tabby.sh/`
-- `Beyond Compare`
-  适合文件和目录差异对比
-  参考链接：`https://macwk.cn/app/611.html`
+### OCR / 翻译
 
-### 4.5 媒体与内容处理
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [LuxShot](https://github.com/haoflynet/LuxShot) | 开源 | 用来做极简截图 OCR，识别后自动复制到剪贴板。 | 极简 OCR | 日常快速文本提取 | 🌟🌟🌟🌟🌟 |  | SwiftUI；100% 离线；可用 `brew install --cask luxshot` |
+| [OCR4Mac](https://github.com/jappre/OCR4Mac) | 开源 | 用快捷键触发截图 OCR，并在弹窗中查看结果。 | 快捷键识别 | 快速识别并编辑文本 | 🌟🌟🌟🌟 |  | `Cmd+Option+A`；需 Xcode 编译或预编译版本 |
+| [iText](https://www.macwk.com/soft/itext) | 未核验 | 用来做图片文字识别和快速翻译。 | OCR 翻译 | 图片取词与文字识别 | 🌟🌟🌟🌟 |  | 适合轻量 OCR |
+| [Easydict](https://macwk.cn/app/2007.html) | 开源 | 用来做截图取词、OCR 和翻译。 | 截图翻译 | 截图取词与翻译 | 🌟🌟🌟🌟🌟 |  | 你草稿里重复出现，已合并为一条 |
+| [macshot](https://github.com/sw33tLie/macshot) | 开源 | 用来做截图、标注、OCR、翻译的一体化处理。 | 全能截图 | 需要截图编辑加 OCR 翻译 | 🌟🌟🌟🌟🌟 | 在用 | 原生路线；可用 `brew install --cask macshot` |
+| [Better Shot](https://github.com/better-shots/better-shot) | 开源 | 用来做截图增强、标注和 OCR 识别。 | 增强 OCR | 低质量截图识别 | 🌟🌟🌟🌟 |  | Tauri / Rust；可走 Cargo 安装 |
+| [macOCR](https://github.com/schappim/macOCR) | 开源 | 用命令行触发截图 OCR，并自动复制结果。 | 命令行 OCR | 终端用户与自动化脚本 | 🌟🌟🌟🌟🌟 |  | `brew install schappim/ocr/macocr`；支持 `ocr -l zh-Hans` |
+| [ScreenCapture](https://github.com/sadopc/ScreenCapture) | 开源 | 用来截图后直接触发 OCR，适合开发者快速提取内容。 | 截图 OCR | 提取代码、日志、界面文本 | 🌟🌟🌟🌟 |  | 多显示器；需 Xcode 编译；按 `O` 触发 OCR |
 
-- `IINA`
-  适合本地视频播放
-  参考链接：`https://macwk.cn/app/3980.html`
-  常用快捷键：
-  - `cmd+alt+]`：倍速
-  - `cmd+]`：倍速
-- `Fig Player`
-  可作为播放器备选
-  参考链接：`https://macwk.cn/app/2886.html`
+### 压缩 / 解压
 
-### 4.6 生活类
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [FastZip](https://apps.apple.com/cn/app/fastzip-%E4%B8%93%E4%B8%9A%E7%9A%84-rar-7z-zip-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/id1565629813?mt=12) | 未核验 | 用来解压和压缩常见格式文件。 | 多格式解压 | 处理常见压缩包 | 🌟🌟🌟🌟 |  | 走 App Store 路线更省事 |
 
-- `iCost`
-  适合轻量记账
+### PDF 工具
 
-## 5. 当前待整理项
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Cisdem PDFMaster](https://macwk.cn/app/2266.html) | 付费 | 用来处理 PDF 的编辑、转换和合并。 | PDF 全家桶 | 合并、转换、编辑 PDF | 🌟🌟🌟 |  | 需求集中时再装 |
 
-下面这些方向后续值得继续补充，但当前还不够稳定：
+### 视频转换
 
-- 各应用的官方获取地址
-- 每个应用的替代方案
-- 免费 / 付费 / 开源状态
-- 是否值得长期保留
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Movavi Video Converter](https://www.macwk.com/soft/movavi-video-converter-22) | 付费 | 用来做视频格式转换和压缩。 | 格式转换 | 视频转码与压缩 | 🌟🌟🌟 |  | 偶发需求够用 |
 
-## 6. 维护规则
+## 笔记
 
-- 新增应用时，优先写“场景 + 理由”，再补下载来源
-- 如果只是收集到一个链接，先不要直接写成正式推荐
-- 存在争议或待验证的信息，单独标为待核验
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [MWeb Pro](https://www.macbl.com/app/utilities/mweb#history-versions) | 付费 | 用来做 Markdown 写作和静态博客输出。 | Markdown | 本地写作与静态博客 | 🌟🌟🌟🌟 |  | 偏成品输出 |
+| [Logseq](https://github.com/logseq/logseq?tab=readme-ov-file) | 开源 | 用来管理本地双链笔记和知识库。 | 本地知识库 | 双链笔记与知识整理 | 🌟🌟🌟🌟🌟 |  | 偏知识管理 |
+
+## 开发工具
+
+### 终端
+
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Tabby](https://tabby.sh/) | 开源 | 用来替代系统终端并增强终端体验。 | 现代终端 | 需要更强的终端体验 | 🌟🌟🌟🌟 |  | 基于 TypeScript |
+
+### 文件对比
+
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Beyond Compare 5](https://macwk.cn/app/611.html) | 付费 | 用来比较文件、目录和版本差异。 | 文件对比 | 文本、目录、版本比对 | 🌟🌟🌟🌟🌟 |  | 经典工具 |
+
+## 媒体
+
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Fig Player](https://macwk.cn/app/2886.html) | 未核验 | 用来播放常见音视频文件并支持倍速。 | 倍速播放 | 日常播放常见媒体文件 | 🌟🌟🌟 |  | 偏通用播放器 |
+| [IINA](https://macwk.cn/app/3980.html) | 开源 | 用来播放本地视频，界面更贴近 macOS。 | 原生感强 | 本地视频播放 | 🌟🌟🌟🌟🌟 |  | `cmd+alt+]`、`cmd+]` 可调倍速 |
+
+## 下载
+
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Motrix](https://motrix.app/zh-CN/download) | 开源 | 用来统一管理常见协议的下载任务。 | 多协议下载 | 统一管理下载任务 | 🌟🌟🌟🌟🌟 |  | 常用下载器 |
+
+## 生活
+
+| 软件名称 | 开源状态 | 说明 | 特点 | 适用场景 | 推荐优先级 | 评价 | 备注 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [iCost](https://apps.apple.com/us/app/icost-%E8%AE%B0%E8%B4%A6-%E5%BF%AB%E9%80%9F%E7%AE%80%E6%B4%81%E5%A5%BD%E7%94%A8%E7%9A%84%E7%90%86%E8%B4%A2%E5%8A%A9%E6%89%8B/id1484262528) | 免费 / 内购 | 用来做日常收支记录和轻量理财。 | 轻量记账 | 日常收支记录 | 🌟🌟🌟🌟 |  | 支持云同步 |
